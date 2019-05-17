@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Image selection controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="image_selection_controller" customModule="ISN_Steganography" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQc-y3-Oce">
+                                <rect key="frame" x="20" y="669" width="117" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="image_view_active"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GId-SH-qcO">
+                                <rect key="frame" x="283" y="669" width="112" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="access_decrypt_view"/>
+                                <connections>
+                                    <segue destination="PgP-wz-4jq" kind="show" animates="NO" id="i7T-SF-NFN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmi-yn-Q2x">
+                                <rect key="frame" x="152" y="669" width="111" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="access_encrypt_view"/>
+                                <connections>
+                                    <segue destination="fU1-PB-49n" kind="show" animates="NO" id="rNL-qH-O5a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPX-UZ-frx">
+                                <rect key="frame" x="20" y="593" width="374" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="image_button_1"/>
+                                <connections>
+                                    <action selector="open_library:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XrB-MQ-DCg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7t-K6-1Nv">
+                                <rect key="frame" x="366" y="28" width="29" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="info_1"/>
+                                <connections>
+                                    <action selector="popover_info:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gPe-Vx-Vil"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_view_intro" translatesAutoresizingMaskIntoConstraints="NO" id="pj6-MF-vgz">
+                                <rect key="frame" x="21" y="243" width="329" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_1" translatesAutoresizingMaskIntoConstraints="NO" id="mU4-LC-pJo">
+                                <rect key="frame" x="16" y="20" width="182" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zx0-B7-GYM">
+                                <rect key="frame" x="21" y="514" width="374" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="camera_2"/>
+                                <connections>
+                                    <action selector="open_camera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FhU-Ij-ulS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIW-ah-yPP">
+                                <rect key="frame" x="21" y="95" width="374" height="385"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5aJ-RS-z3f">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="info_page" translatesAutoresizingMaskIntoConstraints="NO" id="4Cl-pz-E8F">
+                                        <rect key="frame" x="42" y="176" width="331" height="385"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sk0-td-YQf">
+                                        <rect key="frame" x="328" y="201" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="exit_button"/>
+                                        <connections>
+                                            <action selector="hide_info:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XJv-ig-Uru"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.40000000000000002" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="add_image_button" destination="OPX-UZ-frx" id="cY5-dh-Q0u"/>
+                        <outlet property="camera_roll_button" destination="Zx0-B7-GYM" id="Niy-Oq-mC3"/>
+                        <outlet property="decrypt_view_button" destination="GId-SH-qcO" id="keH-sT-QOk"/>
+                        <outlet property="encrypt_view_button" destination="Bmi-yn-Q2x" id="3NU-JU-onY"/>
+                        <outlet property="exit_button" destination="Sk0-td-YQf" id="PRh-qf-9BJ"/>
+                        <outlet property="image_preview" destination="UIW-ah-yPP" id="j24-in-kVH"/>
+                        <outlet property="image_view_button" destination="fQc-y3-Oce" id="5Vq-t0-WpO"/>
+                        <outlet property="info_button" destination="z7t-K6-1Nv" id="peF-oz-FQd"/>
+                        <outlet property="info_image" destination="4Cl-pz-E8F" id="8vF-1V-4bf"/>
+                        <outlet property="info_view" destination="5aJ-RS-z3f" id="rnR-y9-ADG"/>
+                        <outlet property="intro_image" destination="pj6-MF-vgz" id="uQ0-1X-NIw"/>
+                        <outlet property="title_1_image" destination="mU4-LC-pJo" id="f9T-gF-VYp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-490" y="-227"/>
+        </scene>
+        <!--Encryption controller-->
+        <scene sceneID="tCg-WY-xF6">
+            <objects>
+                <viewController id="fU1-PB-49n" customClass="encryption_controller" customModule="ISN_Steganography" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4YX-Sp-ORC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaJ-xb-MyG">
+                                <rect key="frame" x="20" y="669" width="117" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="access_image_view"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="7gx-iR-GNE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSG-7J-Q6I">
+                                <rect key="frame" x="283" y="669" width="112" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="access_decrypt_view"/>
+                                <connections>
+                                    <segue destination="PgP-wz-4jq" kind="show" animates="NO" id="4nl-Sm-H2h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjX-G3-oyv">
+                                <rect key="frame" x="152" y="669" width="111" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="encrypt_view_active"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wEw-u2-Xd5">
+                                <rect key="frame" x="20" y="122" width="374" height="354"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56470588235294117" green="0.60392156862745094" blue="0.68235294117647061" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydT-gf-8ak">
+                                <rect key="frame" x="20" y="501" width="374" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="encrypt_button_1"/>
+                                <connections>
+                                    <action selector="encrypt_image_or_edit_text:" destination="fU1-PB-49n" eventType="touchUpInside" id="TyO-B0-09z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uI1-ZK-M21">
+                                <rect key="frame" x="21" y="578" width="374" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="share_button_2"/>
+                                <connections>
+                                    <action selector="shareImageButtonWithSender:" destination="fU1-PB-49n" eventType="touchUpInside" id="DUZ-Dm-Y0a"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_1" translatesAutoresizingMaskIntoConstraints="NO" id="vfp-v9-ekx">
+                                <rect key="frame" x="21" y="14" width="182" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_2" translatesAutoresizingMaskIntoConstraints="NO" id="Lhp-jG-6YK">
+                                <rect key="frame" x="20" y="66" width="183" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VlW-yu-DE5">
+                                <rect key="frame" x="324" y="20" width="70" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uHW-xL-3Eb">
+                                <rect key="frame" x="1" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="secrets_untold" translatesAutoresizingMaskIntoConstraints="NO" id="TIJ-ds-PFz">
+                                        <rect key="frame" x="42" y="176" width="331" height="385"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYv-nE-Xqc">
+                                        <rect key="frame" x="328" y="201" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="exit_button"/>
+                                        <connections>
+                                            <action selector="hide_info:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6QO-1O-j1b"/>
+                                            <action selector="hide_info:" destination="fU1-PB-49n" eventType="touchUpInside" id="ryp-Ic-QOY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.40000000000000002" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="5PZ-Zg-F49"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="K5H-40-Ujc" appends="YES" id="oKj-wD-Zus"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="decrypt_view_button" destination="vSG-7J-Q6I" id="zgS-jO-RBt"/>
+                        <outlet property="encrypt_button" destination="ydT-gf-8ak" id="Mda-28-FgS"/>
+                        <outlet property="encrypt_view_button" destination="bjX-G3-oyv" id="a0V-6M-0yV"/>
+                        <outlet property="exit_button" destination="NYv-nE-Xqc" id="hxw-jz-t6f"/>
+                        <outlet property="image_view_button" destination="SaJ-xb-MyG" id="leE-oI-4Tn"/>
+                        <outlet property="info_image" destination="TIJ-ds-PFz" id="pXQ-Yk-JUn"/>
+                        <outlet property="info_view" destination="uHW-xL-3Eb" id="DWx-D7-kCS"/>
+                        <outlet property="input_text_field" destination="wEw-u2-Xd5" id="4Md-cS-5eq"/>
+                        <outlet property="preview_image" destination="VlW-yu-DE5" id="xMk-i5-Xzw"/>
+                        <outlet property="share_button" destination="uI1-ZK-M21" id="Zl1-gp-NOj"/>
+                        <outlet property="title_1_image" destination="vfp-v9-ekx" id="VO2-Jp-bMz"/>
+                        <outlet property="title_2_image" destination="Lhp-jG-6YK" id="dKI-hh-cya"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aD5-0v-Uvh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="K5H-40-Ujc">
+                    <connections>
+                        <action selector="end_editing:" destination="fU1-PB-49n" id="QYA-uu-5gB"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="741" y="-214"/>
+        </scene>
+        <!--Decryption controller-->
+        <scene sceneID="Dhs-fk-SHA">
+            <objects>
+                <viewController id="PgP-wz-4jq" customClass="decryption_controller" customModule="ISN_Steganography" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zei-ZX-jN4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dn3-SC-ekC">
+                                <rect key="frame" x="20" y="669" width="117" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="access_image_view"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="Ngi-AI-yhU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ob1-V1-qRP">
+                                <rect key="frame" x="283" y="669" width="112" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="decrypt_view_active"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsv-Sd-OQ7">
+                                <rect key="frame" x="152" y="669" width="111" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="access_encrypt_view"/>
+                                <connections>
+                                    <segue destination="fU1-PB-49n" kind="show" animates="NO" id="r7P-Ud-76q"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Output text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XnF-Z4-oNR">
+                                <rect key="frame" x="20" y="195" width="374" height="358"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.60392156860000001" blue="0.68235294120000001" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.23529411759999999" blue="0.27450980390000002" alpha="0.3398169949" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEX-OM-Q5S">
+                                <rect key="frame" x="21" y="577" width="374" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="share_button_2"/>
+                                <connections>
+                                    <action selector="shareTextButton:" destination="PgP-wz-4jq" eventType="touchUpInside" id="2Yy-5q-g37"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vot-l7-3hD">
+                                <rect key="frame" x="20" y="121" width="374" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="decrypt_button_1"/>
+                                <connections>
+                                    <action selector="decrypt_image:" destination="PgP-wz-4jq" eventType="touchUpInside" id="byb-mX-bZ4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_1" translatesAutoresizingMaskIntoConstraints="NO" id="t9S-Jq-Dmk">
+                                <rect key="frame" x="21" y="11" width="182" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title_3" translatesAutoresizingMaskIntoConstraints="NO" id="Qtu-mP-K8r">
+                                <rect key="frame" x="21" y="63" width="183" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CrD-6W-VBN">
+                                <rect key="frame" x="324" y="23" width="70" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FWF-8q-ngj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mystery_unveiled" translatesAutoresizingMaskIntoConstraints="NO" id="2Zh-NO-Kxd">
+                                        <rect key="frame" x="42" y="176" width="331" height="385"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="620-qG-g0J">
+                                        <rect key="frame" x="328" y="201" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="exit_button"/>
+                                        <connections>
+                                            <action selector="hide_info:" destination="PgP-wz-4jq" eventType="touchUpInside" id="OP3-CE-gY9"/>
+                                            <action selector="hide_info:" destination="fU1-PB-49n" eventType="touchUpInside" id="OXF-k4-AYh"/>
+                                            <action selector="hide_info:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rah-ip-Uw8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.40000000000000002" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vgD-E4-A7u"/>
+                    </view>
+                    <connections>
+                        <outlet property="decrypt_button" destination="Vot-l7-3hD" id="4JG-aB-N1f"/>
+                        <outlet property="decrypt_view_button" destination="Ob1-V1-qRP" id="TEN-Yn-79B"/>
+                        <outlet property="encrypt_view_button" destination="zsv-Sd-OQ7" id="66a-Sc-kfM"/>
+                        <outlet property="exit_button" destination="620-qG-g0J" id="GVT-N9-Vpu"/>
+                        <outlet property="image_view_button" destination="Dn3-SC-ekC" id="nea-DR-Rt7"/>
+                        <outlet property="info_image" destination="2Zh-NO-Kxd" id="BRm-Dk-lwb"/>
+                        <outlet property="info_view" destination="FWF-8q-ngj" id="xEc-Cj-CJ2"/>
+                        <outlet property="output_text_field" destination="XnF-Z4-oNR" id="rNg-tx-QWh"/>
+                        <outlet property="preview_image" destination="CrD-6W-VBN" id="746-A8-YDt"/>
+                        <outlet property="share_button" destination="rEX-OM-Q5S" id="7xj-Qi-fG9"/>
+                        <outlet property="title_1_image" destination="t9S-Jq-Dmk" id="Na8-Ee-5YS"/>
+                        <outlet property="title_2_image" destination="Qtu-mP-K8r" id="TF8-Wb-qgx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="luH-kZ-8s7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2016" y="-214"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="access_decrypt_view" width="250.25" height="136.25"/>
+        <image name="access_encrypt_view" width="250.25" height="136.25"/>
+        <image name="access_image_view" width="250.25" height="136.25"/>
+        <image name="camera_2" width="652" height="98"/>
+        <image name="decrypt_button_1" width="652" height="97.75"/>
+        <image name="decrypt_view_active" width="250.25" height="136.25"/>
+        <image name="encrypt_button_1" width="652" height="98"/>
+        <image name="encrypt_view_active" width="250.25" height="136.25"/>
+        <image name="exit_button" width="35" height="35.25"/>
+        <image name="image_button_1" width="651.75" height="98"/>
+        <image name="image_view_active" width="250.25" height="136.25"/>
+        <image name="image_view_intro" width="564.75" height="247.75"/>
+        <image name="info_1" width="29" height="29"/>
+        <image name="info_page" width="650.25" height="746.25"/>
+        <image name="mystery_unveiled" width="650" height="746.25"/>
+        <image name="secrets_untold" width="650" height="746.25"/>
+        <image name="share_button_2" width="652" height="97.75"/>
+        <image name="title_1" width="356.75" height="29.25"/>
+        <image name="title_2" width="352.25" height="54.5"/>
+        <image name="title_3" width="351.75" height="54.5"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="i7T-SF-NFN"/>
+        <segue reference="rNL-qH-O5a"/>
+        <segue reference="7gx-iR-GNE"/>
+    </inferredMetricsTieBreakers>
+</document>

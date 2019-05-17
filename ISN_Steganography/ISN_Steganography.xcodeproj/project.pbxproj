@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E512F86B21EBDF140068E863 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E512F86A21EBDF140068E863 /* GoogleMobileAds.framework */; };
+		E512F86C21EBDF140068E863 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E512F86A21EBDF140068E863 /* GoogleMobileAds.framework */; };
+		E512F86D21EBDF140068E863 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E512F86A21EBDF140068E863 /* GoogleMobileAds.framework */; };
+		E55AE876206A44A600314C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E55AE875206A44A600314C4F /* Assets.xcassets */; };
+		E5706687208EFF91002EA823 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5706686208EFF91002EA823 /* Utilities.swift */; };
+		E588984A20653F0500EE3CD9 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E588984920653F0500EE3CD9 /* SF-Pro-Display-Bold.otf */; };
+		E588984B20653F0B00EE3CD9 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E588984920653F0500EE3CD9 /* SF-Pro-Display-Bold.otf */; };
+		E588984C20653F0B00EE3CD9 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E588984920653F0500EE3CD9 /* SF-Pro-Display-Bold.otf */; };
+		E5E59F5F2060D59600D736D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59F5E2060D59600D736D7 /* AppDelegate.swift */; };
+		E5E59F642060D59600D736D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E59F622060D59600D736D7 /* Main.storyboard */; };
+		E5E59F692060D59600D736D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E59F672060D59600D736D7 /* LaunchScreen.storyboard */; };
+		E5E59F742060D59600D736D7 /* ISN_SteganographyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59F732060D59600D736D7 /* ISN_SteganographyTests.swift */; };
+		E5E59F7F2060D59600D736D7 /* ISN_SteganographyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59F7E2060D59600D736D7 /* ISN_SteganographyUITests.swift */; };
+		E5E59F8D2060D7EB00D736D7 /* image_selection_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59F8C2060D7EB00D736D7 /* image_selection_controller.swift */; };
+		E5E59F8F2060D81100D736D7 /* encryption_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59F8E2060D81100D736D7 /* encryption_controller.swift */; };
+		E5E59F912060D82400D736D7 /* decryption_controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E59F902060D82400D736D7 /* decryption_controller.swift */; };
+		E5E9972920616C39008F753F /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E9972420616C39008F753F /* Decoder.swift */; };
+		E5E9972A20616C39008F753F /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E9972520616C39008F753F /* Encoder.swift */; };
+		E5E9972C20616C39008F753F /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E9972720616C39008F753F /* Defaults.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5E59F702060D59600D736D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5E59F532060D59600D736D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5E59F5A2060D59600D736D7;
+			remoteInfo = ISN_Steganography;
+		};
+		E5E59F7B2060D59600D736D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5E59F532060D59600D736D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5E59F5A2060D59600D736D7;
+			remoteInfo = ISN_Steganography;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E512F86A21EBDF140068E863 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		E55AE875206A44A600314C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5706686208EFF91002EA823 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		E588984920653F0500EE3CD9 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		E5E59F5B2060D59600D736D7 /* ISN_Steganography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISN_Steganography.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E59F5E2060D59600D736D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E5E59F632060D59600D736D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5E59F682060D59600D736D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5E59F6A2060D59600D736D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E59F6F2060D59600D736D7 /* ISN_SteganographyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISN_SteganographyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E59F732060D59600D736D7 /* ISN_SteganographyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISN_SteganographyTests.swift; sourceTree = "<group>"; };
+		E5E59F752060D59600D736D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E59F7A2060D59600D736D7 /* ISN_SteganographyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISN_SteganographyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E59F7E2060D59600D736D7 /* ISN_SteganographyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISN_SteganographyUITests.swift; sourceTree = "<group>"; };
+		E5E59F802060D59600D736D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E59F8C2060D7EB00D736D7 /* image_selection_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_selection_controller.swift; sourceTree = "<group>"; };
+		E5E59F8E2060D81100D736D7 /* encryption_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = encryption_controller.swift; sourceTree = "<group>"; };
+		E5E59F902060D82400D736D7 /* decryption_controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decryption_controller.swift; sourceTree = "<group>"; };
+		E5E9972420616C39008F753F /* Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		E5E9972520616C39008F753F /* Encoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encoder.swift; sourceTree = "<group>"; };
+		E5E9972720616C39008F753F /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5E59F582060D59600D736D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E512F86B21EBDF140068E863 /* GoogleMobileAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E59F6C2060D59600D736D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E512F86C21EBDF140068E863 /* GoogleMobileAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E59F772060D59600D736D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E512F86D21EBDF140068E863 /* GoogleMobileAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5E59F522060D59600D736D7 = {
+			isa = PBXGroup;
+			children = (
+				E5E59F5D2060D59600D736D7 /* ISN_Steganography */,
+				E5E59F722060D59600D736D7 /* ISN_SteganographyTests */,
+				E5E59F7D2060D59600D736D7 /* ISN_SteganographyUITests */,
+				E5E59F5C2060D59600D736D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5E59F5C2060D59600D736D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5E59F5B2060D59600D736D7 /* ISN_Steganography.app */,
+				E5E59F6F2060D59600D736D7 /* ISN_SteganographyTests.xctest */,
+				E5E59F7A2060D59600D736D7 /* ISN_SteganographyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5E59F5D2060D59600D736D7 /* ISN_Steganography */ = {
+			isa = PBXGroup;
+			children = (
+				E512F86A21EBDF140068E863 /* GoogleMobileAds.framework */,
+				E588984920653F0500EE3CD9 /* SF-Pro-Display-Bold.otf */,
+				E5E59F5E2060D59600D736D7 /* AppDelegate.swift */,
+				E5E9972720616C39008F753F /* Defaults.swift */,
+				E5E9972520616C39008F753F /* Encoder.swift */,
+				E5E9972420616C39008F753F /* Decoder.swift */,
+				E5706686208EFF91002EA823 /* Utilities.swift */,
+				E5E59F8C2060D7EB00D736D7 /* image_selection_controller.swift */,
+				E5E59F8E2060D81100D736D7 /* encryption_controller.swift */,
+				E5E59F902060D82400D736D7 /* decryption_controller.swift */,
+				E5E59F622060D59600D736D7 /* Main.storyboard */,
+				E5E59F672060D59600D736D7 /* LaunchScreen.storyboard */,
+				E5E59F6A2060D59600D736D7 /* Info.plist */,
+				E55AE875206A44A600314C4F /* Assets.xcassets */,
+			);
+			path = ISN_Steganography;
+			sourceTree = "<group>";
+		};
+		E5E59F722060D59600D736D7 /* ISN_SteganographyTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5E59F732060D59600D736D7 /* ISN_SteganographyTests.swift */,
+				E5E59F752060D59600D736D7 /* Info.plist */,
+			);
+			path = ISN_SteganographyTests;
+			sourceTree = "<group>";
+		};
+		E5E59F7D2060D59600D736D7 /* ISN_SteganographyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5E59F7E2060D59600D736D7 /* ISN_SteganographyUITests.swift */,
+				E5E59F802060D59600D736D7 /* Info.plist */,
+			);
+			path = ISN_SteganographyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5E59F5A2060D59600D736D7 /* ISN_Steganography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E59F832060D59600D736D7 /* Build configuration list for PBXNativeTarget "ISN_Steganography" */;
+			buildPhases = (
+				E5E59F572060D59600D736D7 /* Sources */,
+				E5E59F582060D59600D736D7 /* Frameworks */,
+				E5E59F592060D59600D736D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ISN_Steganography;
+			productName = ISN_Steganography;
+			productReference = E5E59F5B2060D59600D736D7 /* ISN_Steganography.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5E59F6E2060D59600D736D7 /* ISN_SteganographyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E59F862060D59600D736D7 /* Build configuration list for PBXNativeTarget "ISN_SteganographyTests" */;
+			buildPhases = (
+				E5E59F6B2060D59600D736D7 /* Sources */,
+				E5E59F6C2060D59600D736D7 /* Frameworks */,
+				E5E59F6D2060D59600D736D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5E59F712060D59600D736D7 /* PBXTargetDependency */,
+			);
+			name = ISN_SteganographyTests;
+			productName = ISN_SteganographyTests;
+			productReference = E5E59F6F2060D59600D736D7 /* ISN_SteganographyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E5E59F792060D59600D736D7 /* ISN_SteganographyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E59F892060D59600D736D7 /* Build configuration list for PBXNativeTarget "ISN_SteganographyUITests" */;
+			buildPhases = (
+				E5E59F762060D59600D736D7 /* Sources */,
+				E5E59F772060D59600D736D7 /* Frameworks */,
+				E5E59F782060D59600D736D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5E59F7C2060D59600D736D7 /* PBXTargetDependency */,
+			);
+			name = ISN_SteganographyUITests;
+			productName = ISN_SteganographyUITests;
+			productReference = E5E59F7A2060D59600D736D7 /* ISN_SteganographyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5E59F532060D59600D736D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Jaafar Rammal";
+				TargetAttributes = {
+					E5E59F5A2060D59600D736D7 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+					E5E59F6E2060D59600D736D7 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E5E59F5A2060D59600D736D7;
+					};
+					E5E59F792060D59600D736D7 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E5E59F5A2060D59600D736D7;
+					};
+				};
+			};
+			buildConfigurationList = E5E59F562060D59600D736D7 /* Build configuration list for PBXProject "ISN_Steganography" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5E59F522060D59600D736D7;
+			productRefGroup = E5E59F5C2060D59600D736D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5E59F5A2060D59600D736D7 /* ISN_Steganography */,
+				E5E59F6E2060D59600D736D7 /* ISN_SteganographyTests */,
+				E5E59F792060D59600D736D7 /* ISN_SteganographyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5E59F592060D59600D736D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E59F692060D59600D736D7 /* LaunchScreen.storyboard in Resources */,
+				E5E59F642060D59600D736D7 /* Main.storyboard in Resources */,
+				E55AE876206A44A600314C4F /* Assets.xcassets in Resources */,
+				E588984A20653F0500EE3CD9 /* SF-Pro-Display-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E59F6D2060D59600D736D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E588984B20653F0B00EE3CD9 /* SF-Pro-Display-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E59F782060D59600D736D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E588984C20653F0B00EE3CD9 /* SF-Pro-Display-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5E59F572060D59600D736D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E9972C20616C39008F753F /* Defaults.swift in Sources */,
+				E5E59F8F2060D81100D736D7 /* encryption_controller.swift in Sources */,
+				E5E9972A20616C39008F753F /* Encoder.swift in Sources */,
+				E5E59F912060D82400D736D7 /* decryption_controller.swift in Sources */,
+				E5E59F8D2060D7EB00D736D7 /* image_selection_controller.swift in Sources */,
+				E5E9972920616C39008F753F /* Decoder.swift in Sources */,
+				E5706687208EFF91002EA823 /* Utilities.swift in Sources */,
+				E5E59F5F2060D59600D736D7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E59F6B2060D59600D736D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E59F742060D59600D736D7 /* ISN_SteganographyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E59F762060D59600D736D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E59F7F2060D59600D736D7 /* ISN_SteganographyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5E59F712060D59600D736D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5E59F5A2060D59600D736D7 /* ISN_Steganography */;
+			targetProxy = E5E59F702060D59600D736D7 /* PBXContainerItemProxy */;
+		};
+		E5E59F7C2060D59600D736D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5E59F5A2060D59600D736D7 /* ISN_Steganography */;
+			targetProxy = E5E59F7B2060D59600D736D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5E59F622060D59600D736D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5E59F632060D59600D736D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5E59F672060D59600D736D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5E59F682060D59600D736D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5E59F812060D59600D736D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5E59F822060D59600D736D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5E59F842060D59600D736D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XZTCHPV389;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ISN_Steganography",
+				);
+				INFOPLIST_FILE = ISN_Steganography/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaafarrammal.ISN-Steganography";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E5E59F852060D59600D736D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XZTCHPV389;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ISN_Steganography",
+				);
+				INFOPLIST_FILE = ISN_Steganography/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaafarrammal.ISN-Steganography";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E5E59F872060D59600D736D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XZTCHPV389;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ISN_Steganography",
+				);
+				INFOPLIST_FILE = ISN_SteganographyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaafarrammal.ISN-SteganographyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ISN_Steganography.app/ISN_Steganography";
+			};
+			name = Debug;
+		};
+		E5E59F882060D59600D736D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XZTCHPV389;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ISN_Steganography",
+				);
+				INFOPLIST_FILE = ISN_SteganographyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaafarrammal.ISN-SteganographyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ISN_Steganography.app/ISN_Steganography";
+			};
+			name = Release;
+		};
+		E5E59F8A2060D59600D736D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XZTCHPV389;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ISN_Steganography",
+				);
+				INFOPLIST_FILE = ISN_SteganographyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaafarrammal.ISN-SteganographyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ISN_Steganography;
+			};
+			name = Debug;
+		};
+		E5E59F8B2060D59600D736D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XZTCHPV389;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ISN_Steganography",
+				);
+				INFOPLIST_FILE = ISN_SteganographyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jaafarrammal.ISN-SteganographyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ISN_Steganography;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5E59F562060D59600D736D7 /* Build configuration list for PBXProject "ISN_Steganography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E59F812060D59600D736D7 /* Debug */,
+				E5E59F822060D59600D736D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5E59F832060D59600D736D7 /* Build configuration list for PBXNativeTarget "ISN_Steganography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E59F842060D59600D736D7 /* Debug */,
+				E5E59F852060D59600D736D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5E59F862060D59600D736D7 /* Build configuration list for PBXNativeTarget "ISN_SteganographyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E59F872060D59600D736D7 /* Debug */,
+				E5E59F882060D59600D736D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5E59F892060D59600D736D7 /* Build configuration list for PBXNativeTarget "ISN_SteganographyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E59F8A2060D59600D736D7 /* Debug */,
+				E5E59F8B2060D59600D736D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5E59F532060D59600D736D7 /* Project object */;
+}
